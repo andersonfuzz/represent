@@ -23,4 +23,5 @@ export default class Factory {
         this.address = address ?? this.address;
         this.contact = contact ?? this.contact;
     }
+    
 }
