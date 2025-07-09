@@ -1,11 +1,11 @@
 import express from 'express';
-import indexRouter from './src/routers/index.js';
 import dotenv from 'dotenv';
+import FactoryRouter from './src/routers/FactoryRouter.js'
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
 dotenv.config();
-app.use('/', indexRouter)
+
+app.use(express.json())
+app.use('/factories', FactoryRouter)
 
 export default app;
