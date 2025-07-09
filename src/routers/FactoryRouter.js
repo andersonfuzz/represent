@@ -1,9 +1,9 @@
 import express from 'express';
-import { listFactories, createFactory } from '../controllers/factoryController.js';
+import { listFactories, createFactory } from '../controllers/FactoryController.js';
 
 const router = express.Router();
 
-router.get('/factories', listFactories);
+router.get('/', listFactories);
 router.post('/newfactory', createFactory);
 
 export default router;
