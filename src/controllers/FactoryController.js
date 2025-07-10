@@ -1,4 +1,6 @@
 import FactoryRepository from '../repositories/FactoryRepository.js';
+import { v4 as uuidv4 } from "uuid";
+
 
 export const listFactories = async (req, res) => {
   try {
@@ -25,7 +27,7 @@ export const createFactory = async (req, res) => {
     } = req.body;
 
     const factoryData = {
-      id: require('uuid').v4(), 
+      id: uuidv4(),
       corporateName,
       tradeName,
       cnpj,
