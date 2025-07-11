@@ -1,12 +1,15 @@
+import { v4 as uuidv4 } from "uuid";
 export default class Address {
-    street = ""
-    city = ""
-    uf = ""
-    zipCode = ""
+    id = null;
+    street = "";
+    city = "";
+    uf = "";
+    zipCode = "";
     constructor(street, city, uf, zipCode) {
-        this.street = street
-        this.city = city
-        this.uf = uf
-        this.zipCode = zipCode
+        this.id = uuidv4();
+        this.street = street;
+        this.city = city;
+        this.uf = uf;
+        this.zipCode = zipCode;
     }
 }
