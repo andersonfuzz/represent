@@ -1,14 +1,11 @@
 # represent
 1. Entidade
-2. DTO
-3. Interface Repositorio
-4. Interface Service
-5. DbContext
-6. Repositorio
-7. Service
-8. Controller
-9. Program.cs
-10. Criar Migrations
-dotnet ef migrations add InitialCreate
-11. aplicar migrations para criar banco
-dotnet ef database update
+2. DTO (mínimo necessário)
+3. Service (regra de negócio)
+4. Controller (testar fluxo)
+5. Interface de Repositório (quando necessário)
+6. Implementação do Repositório
+7. DbContext
+8. Configuração no Program.cs
+9. Criar Migration
+10. Atualizar banco (database update)
