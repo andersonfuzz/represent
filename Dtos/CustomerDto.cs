@@ -1,4 +1,3 @@
-//using represent.Dtos.Shared;
 namespace represent.Dtos;
 
 public record CreateCustomerDto(string CompanyName, string Fantasy, string Cnpj, string StateRegistration, ContactDto Contact, AddressDto Address);
